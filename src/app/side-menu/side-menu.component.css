@@ -1,0 +1,38 @@
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calendar {
+    height: 400px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-button {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    column-gap: 10px;
+    font: inherit;
+    width: 100%;
+}
+
+.menu-button:hover {
+    background-color: #74A48C;
+}
+
+.new-schedule-img {
+    width: 20px;
+    height: 20px;
+}

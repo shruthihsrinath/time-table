@@ -1,0 +1,20 @@
+.main-page {
+    display: flex;
+    flex: row;
+    column-gap: 10px;
+    height: 100vh;
+}
+
+.main-menu {
+    background-color: #90B6A3;
+    flex-grow: .1;
+    margin: 10px;
+    border-radius: .2cm
+}
+
+.main-content {
+    background-color: #FAFAFA;
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: .2cm
+}
