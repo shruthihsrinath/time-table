@@ -1,0 +1,134 @@
+:host {
+    width: 100%;
+}
+
+.planner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* planner header styling */
+.option-section {
+    display: flex;
+    flex-flow: row;
+    padding: 20px;
+    gap: 10px;
+    border-bottom: 1px solid rgba(231, 238, 239, .4);
+}
+
+.arrow {
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #CC9CE8;
+}
+
+.arrow:hover {
+    background-color: #C38BE4;
+}
+
+.direction {
+    flex-grow: 1;
+}
+
+.mode-label {
+    align-self: center;
+}
+
+.planner-select {
+    padding: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    border: none;
+    border-radius: .2cm;
+    background-color: #E7EEEF;
+}
+
+/* planner table styling */
+.table-section {
+    padding: 10px;
+    overflow: hidden;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.table-head {
+    display: flex;
+    flex-flow: row;
+}
+
+
+.head-cell {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    color: #E7EEEF;
+}
+
+.planner-header {
+    position: relative;
+}
+
+.planner-body {
+    position: absolute;
+    overflow: auto;
+    height: 75vh;
+}
+
+.table-rows {
+    display: flex;
+    flex-flow: row;
+}
+
+
+.time-column {
+    display: flex;
+    flex-flow: column;
+    width: 5.05em;
+    height: 4em;
+}
+
+.time-data {
+    color: #E7EEEF;
+    font-size: 15px;
+}
+
+.planner-row {
+    width: 10.1em;
+}
+
+th,
+td {
+    border-bottom: .5px solid rgba(231, 238, 239, .4);
+    border-left: .5px solid rgba(231, 238, 239, .4);
+}
+
+th:first-child,
+td:first-child {
+    border-left: none;
+}
+
+tr:last-child>td {
+    border-bottom: none;
+}
+
+td:hover {
+    background-color: rgba(182, 183, 195, .2);
+}
+
+/* table cell styling */
+.row-button {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
