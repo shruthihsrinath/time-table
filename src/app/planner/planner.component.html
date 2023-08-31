@@ -1,0 +1,36 @@
+<article class="planner">
+    <div class="option-section">
+        <div class="direction">
+            <button class="arrow">&lt;</button>
+            <button class="arrow">&gt;</button>
+        </div>
+        <label for="planner-table" class="mode-label">Mode : </label>
+        <select id="planner-table" class="planner-select">
+            <option value="day">Day</option>
+            <option value="week">Week</option>
+            <option value="fourdays">4 Days</option>
+        </select>
+    </div>
+    <div class="table-section">
+        <thead class="planner-header">
+            <tr class="table-head">
+                <th style="width: 5em;"></th>
+                <th *ngFor="let d of plannerWeek" class="head-cell">
+                    <label>{{d.date | date: 'E'}}</label>
+                    <label>{{d.date?.getDate()}}</label>
+                </th>
+            </tr>
+        </thead>
+        <tbody class="planner-body">
+            <tr class="table-rows" *ngFor="let row of plannerTime">
+                <td class="time-column">
+                    <label class="time-data">{{row.time | date: 'shortTime'}}</label>
+                </td>
+                <td class="planner-row" *ngFor="let d of plannerWeek">
+                    <button class="row-button" [value]="row.time | date: 'HH:mm'"
+                        (click)="onCellSelect(d, $event)"></button>
+                </td>
+            </tr>
+        </tbody>
+    </div>
+</article>

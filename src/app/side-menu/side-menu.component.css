@@ -1,0 +1,46 @@
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.calendar {
+    height: 400px;
+    background-color: #28293D;
+    border-radius: .2cm;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-button {
+    background-color: #CC9CE8;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: .2cm;
+    cursor: pointer;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    column-gap: 10px;
+    font: inherit;
+    width: 100%;
+}
+
+.menu-button:hover {
+    background-color: #C38BE4;
+}
+
+.menu-label {
+    cursor: pointer;
+}
+
+.new-schedule-img {
+    width: 20px;
+    height: 20px;
+}
